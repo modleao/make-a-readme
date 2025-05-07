@@ -1,38 +1,37 @@
-# Make a README
+# Toxic Content Detector
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/68992d1c-36d4-4a84-b177-00c1f64fbcb4/deploy-status)](https://app.netlify.com/sites/make-a-readme/deploys)
-[![CI status](https://github.com/dguo/make-a-readme/workflows/CI/badge.svg)](https://github.com/dguo/make-a-readme/actions?query=branch%3Amain)
+This project is a simple web application that detects toxic, offensive, or harmful content in English text. It uses the pre-trained `unitary/toxic-bert` model from Hugging Face and is built with Gradio for the web interface.
 
-[Make a README](https://makeareadme.com) explains what a README is, what the
-benefits are, and what makes for a good README. It also provides an editable
-template, with live Markdown rendering.
+## 💡 What It Does
 
-I hope people who are new to programming will find it useful, but even for
-more experienced programmers, I think it's worth evaluating once
-in a while if we are doing a good job when it comes to the
-[small details](https://chris.beams.io/posts/git-commit/) that
-can matter more than we might think.
+- Detects toxic categories like:
+  - Toxic
+  - Severe Toxic
+  - Obscene
+  - Threat
+  - Insult
+  - Identity Hate
+- Returns only labels with high confidence
+- Shows "Clean" if no toxic content is detected
 
-Make a README is inspired by [Keep a Changelog](http://keepachangelog.com/).
+---
 
-## Related Resources
+## 🧠 Model Used
 
-- [Art of README](https://github.com/noffle/art-of-readme)
-- [Awesome README](https://github.com/matiassingers/awesome-readme)
-- [Standard Readme](https://github.com/RichardLitt/standard-readme)
+- [`unitary/toxic-bert`](https://huggingface.co/unitary/toxic-bert)
 
-## Roadmap
+---
 
-- Translate the website
-- Create an interactive README generator ([#15](https://github.com/dguo/make-a-readme/issues/15))
-- Link to great examples ([#14](https://github.com/dguo/make-a-readme/issues/14))
-- check and improve accessibility
+## 🚀 Live Demo (Optional)
 
-## Contributing
+To be added if deployed on Hugging Face Spaces, Streamlit, etc.
 
-Please feel free to submit an issue or pull request. To develop, you'll need
-Node.js. Run `yarn install && yarn dev`.
+---
 
-## License
+## 🛠️ Installation
 
-[MIT](https://github.com/dguo/make-a-readme/blob/main/LICENSE)
+1. Clone this repository or download the files:
+
+```bash
+git clone https://github.com/yourusername/toxic-content-detector.git
+cd toxic-content-detector
